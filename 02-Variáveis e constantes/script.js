@@ -16,11 +16,14 @@ console.log(email);
  */
 
 
-var user = 'Marques';
+//var user = 'Marques';
 //Var permite redeclarar
-var user = 'Danilo';
+//var user = 'Danilo';
 
 //Let não permite redeclarar
 let user = 'Juvenal';
 
-console.log(user);
+//Valor fixo, não pode ser alterado
+const number = 33;
+
+console.log(user, number);
