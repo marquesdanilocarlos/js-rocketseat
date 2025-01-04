@@ -1,3 +1,5 @@
+/*
+
 //Declara variável sem valor
 var user;
 
@@ -11,3 +13,14 @@ console.log(email);
 //Substitui o valor da variável
 email = 'marquesdanilocarlos@hotmail.com';
 console.log(email);
+ */
+
+
+var user = 'Marques';
+//Var permite redeclarar
+var user = 'Danilo';
+
+//Let não permite redeclarar
+let user = 'Juvenal';
+
+console.log(user);
