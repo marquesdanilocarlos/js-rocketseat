@@ -43,3 +43,10 @@ function signIn(email, password) {
 }
 
 signIn('marquesdanilocarlos@gmail.com', '123456');
+
+
+let showMessage = function(message) {
+    console.log(message);
+};
+
+showMessage('Danilo Anonimous');
