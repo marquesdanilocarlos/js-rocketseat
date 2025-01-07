@@ -1,3 +1,4 @@
+//Ternário
 let age = 16;
 console.log(age >= 18 ? 'Pode dirigir' : 'Não pode dirigir');
 
@@ -24,3 +25,14 @@ console.log(3.14 ? "VERDADEIRO" : "FALSO");
 console.log(-1 ? "VERDADEIRO" : "FALSO");
 console.log("oi" ? "VERDADEIRO" : "FALSO");
 console.log(" " ? "VERDADEIRO" : "FALSO");
+
+//If
+let hour = 23;
+
+if (hour < 12) {
+    console.log('Bom dia!');
+} else if (hour >= 12 && hour <= 18) {
+    console.log('Boa tarde');
+} else {
+    console.log('Boa noite');
+}
