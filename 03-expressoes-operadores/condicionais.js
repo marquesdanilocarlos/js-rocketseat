@@ -36,3 +36,22 @@ if (hour < 12) {
 } else {
     console.log('Boa noite');
 }
+
+//Switch case
+
+let options = 3;
+
+switch (options) {
+    case 1:
+        console.log('Consultar pedido');
+        break;
+    case 2:
+        console.log('Falar com atendente');
+        break;
+    case 3:
+    case 4:
+        console.log('Falar com suporte');
+        break;
+    default:
+        console.log('Nenhuma das opções selecionadas');
+}
