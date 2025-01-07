@@ -50,3 +50,10 @@ let showMessage = function(message) {
 };
 
 showMessage('Danilo Anonimous');
+
+
+let arrowFunction = (message) => {
+    return `ArrowFunction do ${message}`;
+};
+
+console.log(arrowFunction('Marques'));
