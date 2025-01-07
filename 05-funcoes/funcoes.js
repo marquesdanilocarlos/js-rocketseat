@@ -57,3 +57,14 @@ let arrowFunction = (message) => {
 };
 
 console.log(arrowFunction('Marques'));
+
+
+function execute(taskName, callback) {
+    console.log(`Executando ${taskName}...`);
+
+    callback();
+}
+
+let runner = () => console.log('Tarefa executada');
+
+execute('Download', runner);
