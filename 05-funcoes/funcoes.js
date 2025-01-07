@@ -29,3 +29,17 @@ function multiply(num1, num2) {
 
 let result = multiply(14,3);
 console.log(result);
+
+/**
+ *
+ * @param {String} email user email
+ * @param {String} password more then 6 characteres
+ * @returns {Number} user id
+ */
+function signIn(email, password) {
+    //fluxo de autenticacão
+
+    return 7;
+}
+
+signIn('marquesdanilocarlos@gmail.com', '123456');
