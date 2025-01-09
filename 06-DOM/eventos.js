@@ -21,3 +21,18 @@ form.onsubmit = (e) => {
 
     console.log('Submit do formulário');
 };
+
+const input = document.querySelector('input');
+/*input.addEventListener('keyup', e => {
+    console.log(e.key);
+});*/
+
+//Não captura acionamento de teclas como CTRL e SHIFT
+input.addEventListener('keypress', (e) => {
+    console.log(e.key);
+});
+
+let inputChange = (e) => {
+    console.log('Valor do input mudou');
+};
+input.onchange = inputChange;
