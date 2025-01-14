@@ -1,6 +1,11 @@
+const USD = 6.20;
+const EUR = 5.32;
+const GBP = 6.03;
+
+
 const form = document.querySelector('#form');
 const amount = document.querySelector('#amount');
-const currency= document.querySelector('#currency');
+const currency = document.querySelector('#currency');
 
 amount.addEventListener('input', e => {
     const hasCharactersRegex = /\D+/g;
@@ -10,5 +15,21 @@ amount.addEventListener('input', e => {
 form.onsubmit = (e) => {
     e.preventDefault();
 
-    console.log(currency.value);
+    const amountValue = amount.value;
+
+    switch (currency.value) {
+        case 'USD':
+            convertCurrency(amountValue, USD, "US$");
+            break;
+        case 'EUR':
+            convertCurrency(amountValue, EUR, "€");
+            break;
+        case 'GBP':
+            convertCurrency(amountValue, GBP, "£");
+            break;
+    }
 };
+
+function convertCurrency(amount, price, symbol) {
+console.log(amount, price, symbol);
+}
