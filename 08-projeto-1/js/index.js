@@ -7,6 +7,7 @@ const form = document.querySelector('#form');
 const amount = document.querySelector('#amount');
 const currency = document.querySelector('#currency');
 const footer = document.querySelector('main footer');
+const description = document.querySelector('#description');
 
 amount.addEventListener('input', e => {
     const hasCharactersRegex = /\D+/g;
@@ -33,6 +34,7 @@ form.onsubmit = (e) => {
 
 function convertCurrency(amount, price, symbol) {
     try {
+        description.textContent = `${symbol}1 = ${price}`;
         footer.classList.add('show-result');
     } catch (e) {
         console.log(e);
