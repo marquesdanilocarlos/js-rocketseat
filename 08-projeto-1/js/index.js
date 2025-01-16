@@ -2,7 +2,6 @@ const USD = 6.20;
 const EUR = 5.32;
 const GBP = 6.03;
 
-
 const form = document.querySelector('#form');
 const amount = document.querySelector('#amount');
 const currency = document.querySelector('#currency');
@@ -34,11 +33,18 @@ form.onsubmit = (e) => {
 
 function convertCurrency(amount, price, symbol) {
     try {
-        description.textContent = `${symbol}1 = ${price}`;
+        description.textContent = `${symbol} 1 = ${formatCurrencyBRL(price)}`;
         footer.classList.add('show-result');
     } catch (e) {
         console.log(e);
         alert('Não foi possível converter');
         footer.classList.remove('show-result');
     }
+}
+
+function formatCurrencyBRL(value) {
+    return Number(value).toLocaleString('pt-BR', {
+        style: 'currency',
+        currency: 'BRL',
+    });
 }
