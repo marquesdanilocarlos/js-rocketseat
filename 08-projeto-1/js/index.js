@@ -35,7 +35,7 @@ form.onsubmit = (e) => {
 function convertCurrency(amount, price, symbol) {
     try {
         description.textContent = `${symbol} 1 = ${formatCurrencyBRL(price)}`;
-        result.textContent = amount*price;
+        result.textContent = `${formatCurrencyBRL(amount*price)} reais`.replace('R$', '');
         footer.classList.add('show-result');
     } catch (e) {
         console.log(e);
