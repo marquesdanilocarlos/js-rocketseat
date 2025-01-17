@@ -27,3 +27,13 @@ user.message();
 console.log(user['age']);
 console.log(user['address']['postalCode']);
 user['message']();
+
+
+const product = {
+    name: 'Keyboard',
+    quantity: 10
+};
+
+console.log(product.quantity);
+product.quantity = 5;
+console.log(product.quantity);
