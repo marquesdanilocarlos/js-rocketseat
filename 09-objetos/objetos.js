@@ -16,7 +16,7 @@ const user = {
         postalCode: '73753-000',
     },
     message(){
-        console.log('Oi Usuário!');
+        console.log(`Olá, ${this.name.firstName} !`);
     }
 };
 
