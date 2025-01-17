@@ -19,3 +19,11 @@ const user = {
         console.log('Oi Usuário!');
     }
 };
+
+console.log(user.email);
+console.log(user.name.firstName);
+user.message();
+
+console.log(user['age']);
+console.log(user['address']['postalCode']);
+user['message']();
