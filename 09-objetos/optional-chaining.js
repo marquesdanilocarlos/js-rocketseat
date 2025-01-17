@@ -17,5 +17,5 @@ const user = {
     }*/
 };
 
-console.log(user?.address?.street || 'Propriedade não existe');
+console.log(user?.address?.street ?? 'Propriedade não existe');
 user.message?.()
