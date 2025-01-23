@@ -32,3 +32,9 @@ console.log(position);
 
 cars.splice(position, 1);
 console.log(cars);
+
+let mixedArray = ['texto', 10, false, ()=> alert('Função'), {'nome': 'Danilo'}, [20, 'array dentro de array']];
+
+mixedArray[3]();
+
+console.log(mixedArray[5][1]);
