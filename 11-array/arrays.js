@@ -23,3 +23,12 @@ users.shift();
 users.pop();
 
 console.log(users);
+
+
+let cars = ['Volvo', 'Honda', 'Fiat', 'Ford'];
+
+let position = cars.indexOf('Honda');
+console.log(position);
+
+cars.splice(position, 1);
+console.log(cars);
