@@ -32,3 +32,10 @@ let splited = text.split(',');
 let joined = splited.join(' - ');
 console.log(splited);
 console.log(joined);
+
+
+let position = message.indexOf('fundamentos');
+console.log(position);
+
+let hasWord = message.includes('Javascript');
+console.log(hasWord);
