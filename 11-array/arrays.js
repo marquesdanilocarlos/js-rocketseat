@@ -7,5 +7,19 @@ console.log(fruits[1]);
 console.log(fruits[fruits.length - 1]);
 
 let fullName = "Danilo Carlos Marques";
-console.log(fullName.split(' '))
-console.log(Array.from(fullName))
+console.log(fullName.split(' '));
+console.log(Array.from(fullName));
+
+let users = [];
+
+users.push('Danilo');
+users.push('João');
+users.push('Marcos');
+users.unshift('Ana');
+
+console.log(users);
+
+users.shift();
+users.pop();
+
+console.log(users);
