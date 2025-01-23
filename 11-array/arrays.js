@@ -1,2 +1,7 @@
-const newArray = ['Danilo', 33, {'peso': 71}];
-console.log(newArray.length);
+const fruits = ['Apple', 'Banana', 'Orange', 'Watermelon'];
+console.log(fruits);
+console.log(fruits.length);
+
+console.log(fruits[1]);
+
+console.log(fruits[fruits.length - 1]);
