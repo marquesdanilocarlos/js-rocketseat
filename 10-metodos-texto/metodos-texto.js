@@ -25,3 +25,10 @@ console.log(maskedNumber);
 
 let number = '123';
 console.log(number.padEnd(10, '#'));
+
+let text = 'Estudar, aprender, praticar';
+let splited = text.split(',');
+
+let joined = splited.join(' - ');
+console.log(splited);
+console.log(joined);
