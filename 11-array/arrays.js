@@ -38,3 +38,5 @@ let mixedArray = ['texto', 10, false, ()=> alert('Função'), {'nome': 'Danilo'}
 mixedArray[3]();
 
 console.log(mixedArray[5][1]);
+
+console.log(mixedArray.includes('texto'));
