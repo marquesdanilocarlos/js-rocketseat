@@ -35,12 +35,20 @@ for (let key in person) {
     console.log(person[key]);
 }*/
 
-let students = ['Benício', 'Danilo', 'Dora'];
+/*let students = ['Benício', 'Danilo', 'Dora'];
 
 /*for (let key in students) {
     console.log(students[key]);
-}*/
+}
 
 for (let value of students) {
     console.log(value);
+}*/
+
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+
+    if (i === 5) {
+        break;
+    }
 }
