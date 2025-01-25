@@ -23,7 +23,7 @@ for (let n = 1; n <= 10; n++) {
 }*/
 
 
-let person = {
+/*let person = {
     name: 'Danilo',
     surname: 'Marques',
     email: 'marques@gmail.com',
@@ -33,10 +33,14 @@ for (let key in person) {
     console.log(key);
 
     console.log(person[key]);
-}
+}*/
 
 let students = ['Benício', 'Danilo', 'Dora'];
 
-for (let key in students) {
+/*for (let key in students) {
     console.log(students[key]);
+}*/
+
+for (let value of students) {
+    console.log(value);
 }
