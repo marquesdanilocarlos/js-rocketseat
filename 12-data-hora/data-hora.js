@@ -1,3 +1,4 @@
+/*
 //Data e hora atual
 console.log(new Date());
 
@@ -21,4 +22,25 @@ let dateByUTCString = new Date("2025-01-26T12:48:00");
 console.log(dateByUTCString);
 
 let dateByLongString = new Date("January 26, 2025");
-console.log(dateByLongString);
+console.log(dateByLongString);*/
+
+let date = new Date("January 26, 2025 13:01:00");
+
+//Obtém dia da semana, de 0 a 6
+console.log(date.getDay());
+
+//Dia do mês, de 0 a 30
+console.log(date.getDate());
+
+//Mês de 0 a 11
+console.log(date.getMonth())
+
+//Hora
+console.log(date.getHours());
+
+//Minutos
+console.log(date.getMinutes());
+
+//Segundos
+console.log(date.getSeconds());
+
