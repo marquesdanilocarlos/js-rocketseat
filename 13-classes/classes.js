@@ -3,10 +3,13 @@ class Person {
         this.name = name;
         this.age = age;
     }
+    sayName(){
+        console.log(`Meu nome é ${this.name}!`);
+    }
 }
 
 const person = new Person('Danilo',33);
-console.log(person);
+person.sayName();
 
 const newPerson = new Person('Samara', 29);
-console.log(newPerson);
+newPerson.sayName();
