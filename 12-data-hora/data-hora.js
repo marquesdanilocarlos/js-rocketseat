@@ -60,3 +60,21 @@ console.log(date.toLocaleTimeString());
 
 
 console.log(date.toLocaleString('en-US'));
+
+console.log(date.toLocaleString('pt-BR', {
+    //dateStyle: 'short',
+    /*dateStyle: 'medium',
+    dateStyle: 'long',
+    dateStyle: 'full',*/
+    day: '2-digit',
+    month: '2-digit',
+    year: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+}))
+
+let amount = 12.5;
+console.log(amount.toLocaleString('pt-BR', {
+    style: 'currency',
+    currency: 'BRL',
+}));
