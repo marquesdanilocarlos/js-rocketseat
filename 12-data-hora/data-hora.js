@@ -44,3 +44,11 @@ console.log(date.getMinutes());
 //Segundos
 console.log(date.getSeconds());
 
+//Modificar data
+date.setFullYear(2030);
+date.setMonth(6);
+date.setDate(10);
+date.setHours(3);
+date.setMinutes(36);
+date.setSeconds(59);
+console.log(date);
