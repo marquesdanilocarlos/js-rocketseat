@@ -52,3 +52,11 @@ date.setHours(3);
 date.setMinutes(36);
 date.setSeconds(59);
 console.log(date);
+
+console.log(date.toDateString());
+console.log(date.toLocaleString());
+console.log(date.toLocaleDateString());
+console.log(date.toLocaleTimeString());
+
+
+console.log(date.toLocaleString('en-US'));
