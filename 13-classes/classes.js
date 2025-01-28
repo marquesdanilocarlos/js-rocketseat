@@ -1,7 +1,15 @@
-class Person {
-    static showMessage(){
-        console.log('Mensagem do usuário!')
+class Animal {
+    constructor (name) {
+        this.name = name;
+    }
+    makeNoise() {
+        console.log('Som genérico');
     }
 }
 
-Person.showMessage();
+class Dog extends Animal {
+
+}
+
+let dog = new Dog();
+dog.makeNoise();
