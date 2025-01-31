@@ -1,5 +1,8 @@
 //Seleciona inputs do formulário
+const form = document.querySelector('form');
 const amount = document.querySelector('#amount');
+const expense = document.querySelector('#expense');
+const category = document.querySelector('#category');
 
 
 amount.oninput = () => {
@@ -14,3 +17,7 @@ function brlCurrency(value) {
         currency: 'BRL',
     }).format(value);
 }
+
+form.onsubmit = e => {
+    e.preventDefault();
+};
