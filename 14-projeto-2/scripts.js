@@ -20,4 +20,14 @@ function brlCurrency(value) {
 
 form.onsubmit = e => {
     e.preventDefault();
+
+    const newExpense = {
+        id: Date.now(),
+        expense: expense.value,
+        categoryId: category.value,
+        categoryName: category.options[category.selectedIndex].text,
+        amount: amount.value,
+        createdAt: new Date(),
+    };
+    console.log(newExpense);
 };
