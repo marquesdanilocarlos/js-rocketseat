@@ -3,5 +3,14 @@ const amount = document.querySelector('#amount');
 
 
 amount.oninput = () => {
-  amount.value = amount.value.replace(/\D/g, "");
+    let value = amount.value.replace(/\D/g, "");
+    value = value / 100;
+    amount.value = brlCurrency(value);
 };
+
+function brlCurrency(value) {
+    return Intl.NumberFormat('pt-BR', {
+        style: 'currency',
+        currency: 'BRL',
+    }).format(value);
+}
