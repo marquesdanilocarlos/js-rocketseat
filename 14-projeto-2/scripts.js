@@ -2,6 +2,6 @@
 const amount = document.querySelector('#amount');
 
 
-amount.oninput = e => {
-  console.log(e.target.value);
+amount.oninput = () => {
+  amount.value = amount.value.replace(/\D/g, "");
 };
