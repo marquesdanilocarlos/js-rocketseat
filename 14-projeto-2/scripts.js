@@ -8,6 +8,7 @@ const category = document.querySelector('#category');
 const expenseList = document.querySelector('ul');
 
 const expenseQuantity = document.querySelector('aside>header>p>span');
+const expenseTotalAmount = document.querySelector('.totalAmount');
 
 amount.oninput = () => {
     let value = amount.value.replace(/\D/g, "");
@@ -20,6 +21,16 @@ function brlCurrency(value) {
         style: 'currency',
         currency: 'BRL',
     }).format(value);
+}
+
+function brlCurrenyToFloat(currency) {
+    return parseFloat(
+        currency
+            .replace(/[^\d,]/g, "")
+            .trim()
+            .replace(".", "").replace(",", "."
+        )
+    )
 }
 
 form.onsubmit = e => {
@@ -83,9 +94,19 @@ function addExpense(newExpense) {
 
 function updateTotals() {
     try {
-        const items = expenseList.children.length;
+        const items = expenseList.children;
+        const itemsQuantity = items.length;
+        expenseQuantity.textContent = `${itemsQuantity} ${itemsQuantity > 1 ? 'despesas' : 'despesa'}`;
 
-        expenseQuantity.textContent = `${items} ${items > 1 ? 'despesas' : 'despesa'}`;
+        let total = 0;
+        Array.from(items).forEach((item) => {
+            let itemAmount = item.querySelector('.expense-amount');
+            itemAmount = itemAmount.textContent;
+            total += brlCurrenyToFloat(itemAmount);
+        });
+console.log(total);
+        expenseTotalAmount.textContent = brlCurrency(total).toUpperCase().replace('R$', '');
+
     } catch (error) {
         console.log(error);
         alert('Não foi possível atualizar os totais');
