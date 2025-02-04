@@ -104,7 +104,7 @@ function updateTotals() {
             itemAmount = itemAmount.textContent;
             total += brlCurrenyToFloat(itemAmount);
         });
-console.log(total);
+
         expenseTotalAmount.textContent = brlCurrency(total).toUpperCase().replace('R$', '');
 
     } catch (error) {
@@ -112,3 +112,10 @@ console.log(total);
         alert('Não foi possível atualizar os totais');
     }
 }
+
+expenseList.addEventListener('click', e => {
+    if (e.target.classList.contains('remove-icon')) {
+        e.target.closest('.expense').remove();
+        updateTotals();
+    }
+});
